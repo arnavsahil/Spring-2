@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<bean class="com.ts.Student" name="std1">
+		<property name="rollno" value="2"></property>
+		<property name="name" value="Arnav"></property>
+	</bean>
+	
+	<!-- setter injection
+		Student std = new Student();
+		std.setzollno(2);
+		std.setName("Vinod");
+	  -->
+	  
+	  
+	  
+	<!-- constructor injection
+		Student s = new Student(2,"Arnav");
+	 -->
+	 
+	 <bean class="com.ts.Student" name="std2">
+	 	<constructor-arg value="2"></constructor-arg>
+	 	<constructor-arg value="Neha"></constructor-arg>
+ 	 </bean>
+ 	 
+ 	 <bean class="com.ts.Teacher" name="tch"></bean>
+	
+</beans>
